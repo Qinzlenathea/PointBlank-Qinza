@@ -1,0 +1,412 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(gambar/bgn.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ededed;
+}
+
+.header-container {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  background-color: #000000c5;
+  justify-content: center;
+}
+.logo {
+  margin: 1rem 0;
+}
+.navbar {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: flex;
+}
+
+.navbar a {
+  font-size: smaller;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 1.5rem 1.5rem;
+  color: #ededed;
+  transition: color 0.4s ease;
+}
+
+.navbar a:hover {
+  color: yellow;
+}
+
+.account {
+  margin: 10px 0;
+}
+
+.account button {
+  cursor: pointer;
+  background-color: #00000033;
+  color: red;
+  border-color: red;
+  padding: 8px 1.5rem;
+  margin: 0 8px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.account button:hover {
+  color: #ffff;
+  background-color: #501f1fc5;
+}
+
+/* home content */
+.home {
+  margin-bottom: 3rem;
+}
+.corner1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #ff4500;
+  border-left: 5px solid #ff4500;
+}
+
+.corner2 {
+  position: absolute;
+  right: 98px;
+  top: 740px;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid #ff4500;
+  border-right: 5px solid #ff4500;
+}
+
+.title {
+  color: #ffff;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  text-shadow: 2px 2px 4px black;
+}
+
+.home-content {
+  background-color: #000000c5;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+  box-shadow: 0 0 0 0.5px rgb(0, 0, 0);
+  border-radius: 1px;
+}
+
+.preview1 {
+  width: 450px;
+  clip-path: inset(0 0 300px 0);
+  transform: translate(-4rem, 7.76rem);
+  position: absolute;
+}
+
+.preview2 {
+  width: 500px;
+  clip-path: inset(0 0 300px 0);
+  transform: translate(80rem, 8.7rem);
+  position: absolute;
+}
+
+.home-content h1 {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  margin: 3rem 0;
+  color: #ffff;
+  text-shadow: 2px 2px 0 red;
+}
+
+.download {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 1.4rem;
+}
+
+.download p {
+  color: yellow;
+  display: inline;
+}
+
+.download span {
+  color: #ffff;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 30rem;
+  transform: translate(0, -18px);
+}
+
+.b2 {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  gap: 1.5rem;
+}
+
+.b2 button {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-color: red;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bolder;
+  color: red;
+  background-color: #000000c5;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+.b2 button:hover {
+  color: #ffff;
+  background-color: #971414c5;
+}
+
+.peringatan {
+  max-width: 450px;
+  margin: 0 auto;
+  color: #ededed;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 5px;
+  font-size: small;
+  font-weight: lighter;
+  background-color: rgba(122, 122, 110, 0.568);
+}
+
+/* content 2 */
+.content2 {
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.isicontent1 {
+  background-color: #000000c5;
+  display: inline-flex;
+}
+
+.client {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.client h1 {
+  padding: 5rem 20rem;
+}
+
+.client h1 {
+  color: #ededed;
+}
+
+.client p,
+span {
+  display: inline-flex;
+}
+
+.client p {
+  color: yellow;
+}
+
+.client span {
+  color: #ededed;
+  float: right;
+}
+
+.client .button {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.button button {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-color: red;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bolder;
+  color: red;
+  background-color: #000000c5;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.patch-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  width: 750px;
+  margin-left: auto;
+  background-color: #000000c5;
+  padding: 20px;
+  color: white;
+}
+.patch-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.usage-button {
+  display: block;
+  width: 250px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-color: red;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bolder;
+  color: red;
+  background-color: #000000c5;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.patch-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.patch-item:last-child {
+  border-bottom: none;
+}
+.patch-info {
+  flex: 1;
+}
+.patch-info p {
+  margin: 0;
+}
+.patch-title {
+  font-weight: bold;
+}
+.patch-date-size {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.download-buttons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.download-button {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-color: red;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bolder;
+  color: red;
+  background-color: #000000c5;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  margin-right: 1rem;
+}
+.scrollable-content {
+  width: 100%;
+  height: 350px;
+  overflow-y: scroll;
+}
+.scrollable-content::-webkit-scrollbar {
+  width: 10px;
+}
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #700000e8;
+  border-radius: 5px;
+}
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background-color: #700000;
+}
+
+.requirment {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 17px;
+  box-sizing: border-box;
+  background-color: #000000c5;
+  margin-bottom: 3rem;
+  min-height: 330px;
+  
+}
+
+.requirment .rtitle {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  gap: 8px;
+}
+
+.requirment .rtitle h3 {
+  margin-top: 5px;
+  color: #c5c5c5;
+}
+
+.requirment .rtitle h1 {
+  color: white;
+}
+
+.requirment .spek span {
+  color: #ffd700;
+  line-height: 3;
+}
+
+.requirment .spek {
+  padding-left: 2rem;
+}
+
+/* footer */
+.navbarLast {
+  background-color: #790707;
+  padding: 20px 0;
+  text-align: center;
+}
+.navbarLast a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 12px;
+  font-weight: 550;
+}
+.navbarLast a:hover {
+  text-decoration: underline;
+}
+.navbarLast a i {
+  margin-left: 5px;
+}
+footer {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #490000;
+}
+footer img {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+footer p {
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: 550;
+  color: #ededed;
+}
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
